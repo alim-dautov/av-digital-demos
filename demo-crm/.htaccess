@@ -6,10 +6,7 @@ Options -Indexes
   RewriteBase /
 
   RewriteCond %{HTTPS} !=on
-  RewriteRule ^ https://www.alim-os.asia%{REQUEST_URI} [L,R=301]
-
-  RewriteCond %{HTTP_HOST} !^www\.alim-os\.asia$ [NC]
-  RewriteRule ^ https://www.alim-os.asia%{REQUEST_URI} [L,R=301]
+  RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
 
   RewriteCond %{HTTP:Authorization} .
   RewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization}]
