@@ -1,0 +1,11 @@
+node_modules
+.next
+.data
+uploads
+.env
+.env.local
+*.tsbuildinfo
+next-env.d.ts
+coverage
+dist
+deploy/secrets

@@ -1,0 +1,216 @@
+{
+  "mode": "test",
+  "note": "Тестовый каталог, не выгрузка боевой 1С",
+  "products": [
+    {
+      "onec_id": "TEST-200",
+      "sku": "DEMO-D-200",
+      "name": "Перфоратор",
+      "unit": "шт",
+      "characteristics": "Демо-позиция тестового каталога",
+      "min_price": 80000,
+      "price": 89000,
+      "stock": {
+        "ALM": {
+          "physical": 4,
+          "reserved": 1
+        }
+      }
+    },
+    {
+      "onec_id": "TEST-18",
+      "sku": "DEMO-D-18",
+      "name": "Шуруповёрт",
+      "unit": "шт",
+      "characteristics": "Демо-позиция тестового каталога",
+      "min_price": 35000,
+      "price": 42000,
+      "stock": {
+        "ALM": {
+          "physical": 8,
+          "reserved": 0
+        }
+      }
+    },
+    {
+      "onec_id": "TEST-DEMO-G-125",
+      "sku": "DEMO-G-125",
+      "name": "УШМ (болгарка) 125 мм",
+      "unit": "шт",
+      "characteristics": "Демо-позиция тестового каталога",
+      "min_price": 27000,
+      "price": 31000,
+      "stock": {
+        "ALM": {
+          "physical": 12,
+          "reserved": 2
+        }
+      }
+    },
+    {
+      "onec_id": "TEST-DEMO-L-650",
+      "sku": "DEMO-L-650",
+      "name": "Электролобзик",
+      "unit": "шт",
+      "characteristics": "Демо-позиция тестового каталога",
+      "min_price": 24000,
+      "price": 28000,
+      "stock": {
+        "ALM": {
+          "physical": 6,
+          "reserved": 0
+        }
+      }
+    },
+    {
+      "onec_id": "TEST-DEMO-S-900",
+      "sku": "DEMO-S-900",
+      "name": "Сабельная пила",
+      "unit": "шт",
+      "characteristics": "Демо-позиция тестового каталога",
+      "min_price": 47000,
+      "price": 54000,
+      "stock": {
+        "ALM": {
+          "physical": 3,
+          "reserved": 1
+        }
+      }
+    },
+    {
+      "onec_id": "TEST-DEMO-P-2000",
+      "sku": "DEMO-P-2000",
+      "name": "Фен строительный",
+      "unit": "шт",
+      "characteristics": "Демо-позиция тестового каталога",
+      "min_price": 16500,
+      "price": 19500,
+      "stock": {
+        "ALM": {
+          "physical": 9,
+          "reserved": 0
+        }
+      }
+    },
+    {
+      "onec_id": "TEST-DEMO-K-30",
+      "sku": "DEMO-K-30",
+      "name": "Компрессор 24 л",
+      "unit": "шт",
+      "characteristics": "Демо-позиция тестового каталога",
+      "min_price": 68000,
+      "price": 78000,
+      "stock": {
+        "ALM": {
+          "physical": 2,
+          "reserved": 0
+        }
+      }
+    },
+    {
+      "onec_id": "TEST-DEMO-V-1600",
+      "sku": "DEMO-V-1600",
+      "name": "Мойка высокого давления",
+      "unit": "шт",
+      "characteristics": "Демо-позиция тестового каталога",
+      "min_price": 85000,
+      "price": 96000,
+      "stock": {
+        "ALM": {
+          "physical": 5,
+          "reserved": 1
+        }
+      }
+    },
+    {
+      "onec_id": "TEST-DEMO-B-20",
+      "sku": "DEMO-B-20",
+      "name": "Бур SDS+ набор 5 шт",
+      "unit": "шт",
+      "characteristics": "Демо-позиция тестового каталога",
+      "min_price": 7800,
+      "price": 9800,
+      "stock": {
+        "ALM": {
+          "physical": 40,
+          "reserved": 6
+        }
+      }
+    },
+    {
+      "onec_id": "TEST-DEMO-D-DSK",
+      "sku": "DEMO-D-DSK",
+      "name": "Диски отрезные 125 мм (10 шт)",
+      "unit": "шт",
+      "characteristics": "Демо-позиция тестового каталога",
+      "min_price": 2900,
+      "price": 3600,
+      "stock": {
+        "ALM": {
+          "physical": 75,
+          "reserved": 10
+        }
+      }
+    },
+    {
+      "onec_id": "TEST-DEMO-LV-3",
+      "sku": "DEMO-LV-3",
+      "name": "Лазерный уровень",
+      "unit": "шт",
+      "characteristics": "Демо-позиция тестового каталога",
+      "min_price": 59000,
+      "price": 67000,
+      "stock": {
+        "ALM": {
+          "physical": 4,
+          "reserved": 1
+        }
+      }
+    },
+    {
+      "onec_id": "TEST-DEMO-R-5",
+      "sku": "DEMO-R-5",
+      "name": "Рулетка 5 м",
+      "unit": "шт",
+      "characteristics": "Демо-позиция тестового каталога",
+      "min_price": 1300,
+      "price": 1800,
+      "stock": {
+        "ALM": {
+          "physical": 120,
+          "reserved": 12
+        }
+      }
+    },
+    {
+      "onec_id": "TEST-DEMO-SET-94",
+      "sku": "DEMO-SET-94",
+      "name": "Набор инструментов 94 предмета",
+      "unit": "шт",
+      "characteristics": "Демо-позиция тестового каталога",
+      "min_price": 33000,
+      "price": 39500,
+      "stock": {
+        "ALM": {
+          "physical": 7,
+          "reserved": 2
+        }
+      }
+    },
+    {
+      "onec_id": "TEST-DEMO-GEN-3",
+      "sku": "DEMO-GEN-3",
+      "name": "Генератор бензиновый 3 кВт",
+      "unit": "шт",
+      "characteristics": "Демо-позиция тестового каталога",
+      "min_price": 220000,
+      "price": 245000,
+      "stock": {
+        "ALM": {
+          "physical": 2,
+          "reserved": 0
+        }
+      }
+    }
+  ]
+}

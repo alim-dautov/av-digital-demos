@@ -1,0 +1,3 @@
+module.exports=[44252,e=>{"use strict";e.i(66680);var t=e.i(75225),r=e.i(18916);e.i(24285);var i=e.i(11329);e.i(36328),e.i(5559);let s=/^[A-Za-z0-9_-]{20,64}$/;async function n(e,i){if(!s.test(i))return null;let[n]=await e.select().from(r.counterparties).where((0,t.b)((0,t.u)(r.counterparties.portalToken,i),(0,t.M)(r.counterparties.deletedAt)));return n??null}e.s(["I",0,n,"y",0,()=>(0,i.H)({counterparties:"view",shipments:"view",orders:"view",payments:"view"})])}];
+
+//# sourceMappingURL=src_modules_counterparties_portal_ts_17y6uhaxx7o23._.js.map

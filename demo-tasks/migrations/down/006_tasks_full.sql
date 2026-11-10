@@ -1,0 +1,10 @@
+ALTER TABLE tasks DROP INDEX uq_task_recur;
+ALTER TABLE tasks DROP COLUMN recur_on;
+ALTER TABLE tasks DROP COLUMN recurrence_id;
+ALTER TABLE tasks DROP COLUMN template_id;
+ALTER TABLE user_prefs DROP COLUMN saved_filters;
+DROP TABLE IF EXISTS notifications;
+DROP TABLE IF EXISTS task_recurrences;
+DROP TABLE IF EXISTS task_templates;
+DROP TABLE IF EXISTS task_attachments;
+DELETE FROM settings WHERE `key` = 'task_remind_hours';

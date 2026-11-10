@@ -1,0 +1,95 @@
+{
+  "node": {
+    "00c067eda99e8968e23f9b49e49a9f39f25ca44960": {
+      "workers": {
+        "app/(app)/tasks/page": {
+          "moduleId": 65653,
+          "async": true
+        }
+      },
+      "exportedName": "logoutAction",
+      "filename": "src/app/(auth)/actions.ts"
+    },
+    "7f2ab5f1980776f32457b3fbdc7b1e43b99d676d86": {
+      "workers": {
+        "app/(app)/tasks/page": {
+          "moduleId": 65653,
+          "async": true
+        }
+      },
+      "exportedName": "createTaskAction",
+      "filename": "src/modules/tasks/actions.ts"
+    },
+    "7f7431b81a202c5a96e24a9d68cd07ab1dc8efb376": {
+      "workers": {
+        "app/(app)/tasks/page": {
+          "moduleId": 65653,
+          "async": true
+        }
+      },
+      "exportedName": "saveNoteAction",
+      "filename": "src/modules/notes/actions.ts"
+    },
+    "7f0bf6d98b90e96c574ca03cb26525798a95558703": {
+      "workers": {
+        "app/(app)/tasks/page": {
+          "moduleId": 65653,
+          "async": true
+        }
+      },
+      "exportedName": "createLeadAction",
+      "filename": "src/modules/leads/actions.ts"
+    },
+    "7fe15978a26a73e0b87221dfd6dde4696c414fc3a8": {
+      "workers": {
+        "app/(app)/tasks/page": {
+          "moduleId": 65653,
+          "async": true
+        }
+      },
+      "exportedName": "commentTaskAction",
+      "filename": "src/modules/tasks/actions.ts"
+    },
+    "7f6343fbe44ece8037c04943cdf10178ff410f6c5a": {
+      "workers": {
+        "app/(app)/tasks/page": {
+          "moduleId": 65653,
+          "async": true
+        }
+      },
+      "exportedName": "deleteTaskAction",
+      "filename": "src/modules/tasks/actions.ts"
+    },
+    "7f794ee8316bdacf0ba29c9e66d0685dc94b651ea9": {
+      "workers": {
+        "app/(app)/tasks/page": {
+          "moduleId": 65653,
+          "async": true
+        }
+      },
+      "exportedName": "getTaskAction",
+      "filename": "src/modules/tasks/actions.ts"
+    },
+    "7fd3af7a328c7d8d2eb839d4087f4d8cfbf1840ff1": {
+      "workers": {
+        "app/(app)/tasks/page": {
+          "moduleId": 65653,
+          "async": true
+        }
+      },
+      "exportedName": "moveTaskAction",
+      "filename": "src/modules/tasks/actions.ts"
+    },
+    "7f8cdb867efe8071abfa40e5197a650bcfb50e855e": {
+      "workers": {
+        "app/(app)/tasks/page": {
+          "moduleId": 65653,
+          "async": true
+        }
+      },
+      "exportedName": "updateTaskAction",
+      "filename": "src/modules/tasks/actions.ts"
+    }
+  },
+  "edge": {}
+}

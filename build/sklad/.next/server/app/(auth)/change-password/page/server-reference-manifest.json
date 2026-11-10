@@ -1,0 +1,25 @@
+{
+  "node": {
+    "60f945a9e197b630ee03ce12a6e1c84e6ffd79d519": {
+      "workers": {
+        "app/(auth)/change-password/page": {
+          "moduleId": 41919,
+          "async": true
+        }
+      },
+      "exportedName": "changePasswordAction",
+      "filename": "src/app/(auth)/actions.ts"
+    },
+    "60c9fb66eb037d7867b7d21cfdecc9cef9339ba877": {
+      "workers": {
+        "app/(auth)/change-password/page": {
+          "moduleId": 41919,
+          "async": true
+        }
+      },
+      "exportedName": "loginAction",
+      "filename": "src/app/(auth)/actions.ts"
+    }
+  },
+  "edge": {}
+}

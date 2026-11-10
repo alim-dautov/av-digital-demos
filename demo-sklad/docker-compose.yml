@@ -1,0 +1,45 @@
+# Запуск: cp .env.example .env (заполните APP_SECRET, APP_URL, VAPID) → docker compose up -d --build
+# Первые временные пароли: docker compose logs migrate (или файл .data/initial-passwords.txt внутри тома)
+services:
+  db:
+    image: postgres:17-alpine
+    restart: unless-stopped
+    environment:
+      POSTGRES_USER: demo
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-demo}
+      POSTGRES_DB: demo
+      TZ: Asia/Almaty
+    volumes: [pgdata:/var/lib/postgresql/data]
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U demo -d demo"]
+      interval: 5s
+      timeout: 3s
+      retries: 20
+
+  migrate:
+    build: { context: ., target: tools }
+    env_file: .env
+    environment:
+      DATABASE_URL: postgres://demo:${POSTGRES_PASSWORD:-demo}@db:5432/demo
+    volumes: [seeddata:/app/.data]
+    depends_on: { db: { condition: service_healthy } }
+    command: ["sh", "-c", "npm run setup && cat .data/initial-passwords.txt 2>/dev/null || true"]
+    restart: "no"
+
+  app:
+    build: { context: ., target: runner }
+    restart: unless-stopped
+    env_file: .env
+    environment:
+      DATABASE_URL: postgres://demo:${POSTGRES_PASSWORD:-demo}@db:5432/demo
+      TZ: Asia/Almaty
+    ports: ["${APP_PORT:-3000}:3000"]
+    volumes: [uploads:/app/uploads]
+    depends_on:
+      db: { condition: service_healthy }
+      migrate: { condition: service_completed_successfully }
+
+volumes:
+  pgdata:
+  uploads:
+  seeddata:

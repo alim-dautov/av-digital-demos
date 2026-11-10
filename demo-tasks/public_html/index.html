@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, viewport-fit=cover"
+    />
+    <meta name="theme-color" content="#0B0B0D" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="apple-mobile-web-app-title" content="Demo CRM" />
+    <link rel="manifest" href="/manifest.webmanifest" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon-v2.png" />
+    <link rel="icon" href="/favicon-v2.ico" sizes="48x48" />
+    <link rel="icon" type="image/svg+xml" href="/favicon-v2.svg" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32-v2.png" />
+    <link rel="icon" type="image/png" sizes="192x192" href="/pwa-icons/icon-192-v2.png" />
+    <link rel="icon" type="image/png" sizes="512x512" href="/pwa-icons/icon-512-v2.png" />
+    <title>Demo CRM</title>
+    <script>
+      try {
+        var p = localStorage.getItem('demo-theme')
+        var light = p === 'light' || (p === 'system' && matchMedia('(prefers-color-scheme: light)').matches)
+        document.documentElement.dataset.theme = light ? 'light' : 'dark'
+      } catch (e) {}
+    </script>
+    <script type="module" fetchpriority="high" crossorigin src="/assets/index-BzjCSIen.js"></script>
+    <link rel="modulepreload" crossorigin href="/assets/auth-C9SO5yCi.js">
+    <link rel="stylesheet" crossorigin href="/assets/index-Cf5wUXki.css">
+  <link rel="modulepreload" crossorigin href="/assets/LoginPage-CjdYM4Nj.js"></head>
+  <body>
+    <div id="root"></div>
+  </body>
+</html>

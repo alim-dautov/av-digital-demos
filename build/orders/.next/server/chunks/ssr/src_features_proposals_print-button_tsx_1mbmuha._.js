@@ -1,0 +1,3 @@
+module.exports=[33467,a=>{"use strict";var b=a.i(87924),c=a.i(64831);let d={name:"printer",size:24,node:[["path",{d:"M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2",key:"143wyd"}],["path",{d:"M6 9V3a1 1 0 0 1 1-1h10a1 1 0 0 1 1 1v6",key:"1itne7"}],["rect",{x:"6",y:"14",width:"12",height:"8",rx:"1",key:"1ue0tg"}]]};d.node;let e=(0,c.default)(d);var f=a.i(99570);a.s(["PrintButton",0,function(){return(0,b.jsxs)(f.Button,{type:"button",variant:"outline",onClick:()=>window.print(),children:[(0,b.jsx)(e,{className:"size-4"})," Печать"]})}],33467)}];
+
+//# sourceMappingURL=src_features_proposals_print-button_tsx_1mbmuha._.js.map

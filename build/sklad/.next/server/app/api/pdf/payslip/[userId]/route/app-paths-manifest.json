@@ -1,0 +1,3 @@
+{
+  "/api/pdf/payslip/[userId]/route": "app/api/pdf/payslip/[userId]/route.js"
+}

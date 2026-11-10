@@ -1,0 +1,125 @@
+{
+  "node": {
+    "00c067eda99e8968e23f9b49e49a9f39f25ca44960": {
+      "workers": {
+        "app/(app)/products/page": {
+          "moduleId": 71179,
+          "async": true
+        }
+      },
+      "exportedName": "logoutAction",
+      "filename": "src/app/(auth)/actions.ts"
+    },
+    "7f2ab5f1980776f32457b3fbdc7b1e43b99d676d86": {
+      "workers": {
+        "app/(app)/products/page": {
+          "moduleId": 71179,
+          "async": true
+        }
+      },
+      "exportedName": "createTaskAction",
+      "filename": "src/modules/tasks/actions.ts"
+    },
+    "7f7431b81a202c5a96e24a9d68cd07ab1dc8efb376": {
+      "workers": {
+        "app/(app)/products/page": {
+          "moduleId": 71179,
+          "async": true
+        }
+      },
+      "exportedName": "saveNoteAction",
+      "filename": "src/modules/notes/actions.ts"
+    },
+    "7f0bf6d98b90e96c574ca03cb26525798a95558703": {
+      "workers": {
+        "app/(app)/products/page": {
+          "moduleId": 71179,
+          "async": true
+        }
+      },
+      "exportedName": "createLeadAction",
+      "filename": "src/modules/leads/actions.ts"
+    },
+    "7fa47e7bbb81fde275c1905fadab28c3af33aa4218": {
+      "workers": {
+        "app/(app)/products/page": {
+          "moduleId": 71179,
+          "async": true
+        }
+      },
+      "exportedName": "deleteFolderAction",
+      "filename": "src/modules/products/actions.ts"
+    },
+    "7fa3ac03abe23d9460ffef3379961dea73839addb3": {
+      "workers": {
+        "app/(app)/products/page": {
+          "moduleId": 71179,
+          "async": true
+        }
+      },
+      "exportedName": "saveFolderAction",
+      "filename": "src/modules/products/actions.ts"
+    },
+    "7f064b81bed09333cde3f312cf56f819a8a55021ee": {
+      "workers": {
+        "app/(app)/products/page": {
+          "moduleId": 71179,
+          "async": true
+        }
+      },
+      "exportedName": "deleteProductsAction",
+      "filename": "src/modules/products/actions.ts"
+    },
+    "7f9b71436a884d4ad54cbd6f21fbb7aa0e1b730370": {
+      "workers": {
+        "app/(app)/products/page": {
+          "moduleId": 71179,
+          "async": true
+        }
+      },
+      "exportedName": "moveProductsAction",
+      "filename": "src/modules/products/actions.ts"
+    },
+    "7fd11d770490e51009155b1d5c8aa8ec5f38c658c0": {
+      "workers": {
+        "app/(app)/products/page": {
+          "moduleId": 71179,
+          "async": true
+        }
+      },
+      "exportedName": "applyBulkAction",
+      "filename": "src/modules/products/actions.ts"
+    },
+    "7fd5249c4c50b24a27a19da918fbb3e69857896a7f": {
+      "workers": {
+        "app/(app)/products/page": {
+          "moduleId": 71179,
+          "async": true
+        }
+      },
+      "exportedName": "previewBulkAction",
+      "filename": "src/modules/products/actions.ts"
+    },
+    "40df2e602e0069f0f140e055b7a21597612866b4a1": {
+      "workers": {
+        "app/(app)/products/page": {
+          "moduleId": 71179,
+          "async": true
+        }
+      },
+      "exportedName": "importProductsAction",
+      "filename": "src/modules/products/actions.ts"
+    },
+    "7f9062742644331f4418e172da14c59e8268a187a1": {
+      "workers": {
+        "app/(app)/products/page": {
+          "moduleId": 71179,
+          "async": true
+        }
+      },
+      "exportedName": "rollbackBatchAction",
+      "filename": "src/modules/products/actions.ts"
+    }
+  },
+  "edge": {}
+}

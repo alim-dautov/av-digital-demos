@@ -1,0 +1,3 @@
+module.exports=[15339,a=>{"use strict";var b=a.i(50944),c=a.i(72131),d=a.i(23292),e=a.i(5308);a.s(["f",0,function(){let[a,f]=(0,c.useTransition)(),g=(0,b.useRouter)();return{pending:a,run:(a,b={})=>new Promise(c=>f(async()=>{let f=await a();if(!f.ok){d.c.error(f.error),c(null);return}b.success&&d.c.success("function"==typeof b.success?b.success(f.data):b.success),b.onOk?.(f.data),(0,e.c)(),!1!==b.refresh&&g.refresh(),c(f.data)}))}}])}];
+
+//# sourceMappingURL=src_components_use-run_ts_0szh2mqp8e8ig._.js.map

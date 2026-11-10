@@ -1,0 +1,3 @@
+module.exports=[20863,a=>{"use strict";var b=a.i(87924),c=a.i(50944),d=a.i(78484),e=a.i(72559),f=a.i(15339);a.s(["DeleteDocButton",0,function({action:a,id:g,redirect:h,label:i}){let j=(0,c.useRouter)(),{pending:k,run:l}=(0,f.f)();return(0,b.jsx)(e.K,{variant:"ghost",className:"text-danger",icon:(0,b.jsx)(d.f,{className:"size-4"}),loading:k,onClick:()=>confirm(`Удалить ${i}? Остатки и долги пересчитаются. Действие попадёт в журнал.`)&&l(()=>a({id:g}),{success:"Удалено",onOk:()=>j.replace(h)}),children:"Удалить"})}])}];
+
+//# sourceMappingURL=src_components_delete-doc_tsx_1jzz0bbrgbs3s._.js.map

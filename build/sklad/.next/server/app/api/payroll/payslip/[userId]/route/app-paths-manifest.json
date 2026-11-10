@@ -1,0 +1,3 @@
+{
+  "/api/payroll/payslip/[userId]/route": "app/api/payroll/payslip/[userId]/route.js"
+}

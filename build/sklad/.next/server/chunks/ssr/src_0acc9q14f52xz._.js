@@ -1,0 +1,3 @@
+module.exports=[45358,a=>{a.v(a=>Promise.resolve().then(()=>a(22239)))},3687,a=>{a.v(b=>Promise.all(["server/chunks/ssr/src_modules_1ou7gp5u_dung._.js","server/chunks/ssr/src_modules_counterparties_portal_ts_16r62g49838rd._.js"].map(b=>a.l(b))).then(()=>b(39113)))},84746,a=>{a.v(b=>Promise.all(["server/chunks/ssr/src_modules_shipments_service_ts_0tad10zyidg65._.js"].map(b=>a.l(b))).then(()=>b(15213)))}];
+
+//# sourceMappingURL=src_0acc9q14f52xz._.js.map

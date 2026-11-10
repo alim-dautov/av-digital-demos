@@ -1,0 +1,163 @@
+{
+  "app": {
+    "[project]/src/app/(app)/analytics/page": [
+      "static/media/Geist_Variable-s.p.0mrjj4bg00-he.woff2",
+      "static/media/GeistMono_Variable.p.3ms9vq719j3f8.woff2"
+    ],
+    "[project]/src/app/(app)/assistant/page": [
+      "static/media/Geist_Variable-s.p.0mrjj4bg00-he.woff2",
+      "static/media/GeistMono_Variable.p.3ms9vq719j3f8.woff2"
+    ],
+    "[project]/src/app/(app)/attendance/page": [
+      "static/media/Geist_Variable-s.p.0mrjj4bg00-he.woff2",
+      "static/media/GeistMono_Variable.p.3ms9vq719j3f8.woff2"
+    ],
+    "[project]/src/app/(app)/attendance/qr/page": [
+      "static/media/Geist_Variable-s.p.0mrjj4bg00-he.woff2",
+      "static/media/GeistMono_Variable.p.3ms9vq719j3f8.woff2"
+    ],
+    "[project]/src/app/(app)/attendance/scan/page": [
+      "static/media/Geist_Variable-s.p.0mrjj4bg00-he.woff2",
+      "static/media/GeistMono_Variable.p.3ms9vq719j3f8.woff2"
+    ],
+    "[project]/src/app/(app)/calculator/page": [
+      "static/media/Geist_Variable-s.p.0mrjj4bg00-he.woff2",
+      "static/media/GeistMono_Variable.p.3ms9vq719j3f8.woff2"
+    ],
+    "[project]/src/app/(app)/calculator/result/page": [
+      "static/media/Geist_Variable-s.p.0mrjj4bg00-he.woff2",
+      "static/media/GeistMono_Variable.p.3ms9vq719j3f8.woff2"
+    ],
+    "[project]/src/app/(app)/calendar/page": [
+      "static/media/Geist_Variable-s.p.0mrjj4bg00-he.woff2",
+      "static/media/GeistMono_Variable.p.3ms9vq719j3f8.woff2"
+    ],
+    "[project]/src/app/(app)/checklists/page": [
+      "static/media/Geist_Variable-s.p.0mrjj4bg00-he.woff2",
+      "static/media/GeistMono_Variable.p.3ms9vq719j3f8.woff2"
+    ],
+    "[project]/src/app/(app)/clients/[id]/page": [
+      "static/media/Geist_Variable-s.p.0mrjj4bg00-he.woff2",
+      "static/media/GeistMono_Variable.p.3ms9vq719j3f8.woff2"
+    ],
+    "[project]/src/app/(app)/clients/page": [
+      "static/media/Geist_Variable-s.p.0mrjj4bg00-he.woff2",
+      "static/media/GeistMono_Variable.p.3ms9vq719j3f8.woff2"
+    ],
+    "[project]/src/app/(app)/company-placeholder/page": [
+      "static/media/Geist_Variable-s.p.0mrjj4bg00-he.woff2",
+      "static/media/GeistMono_Variable.p.3ms9vq719j3f8.woff2"
+    ],
+    "[project]/src/app/(app)/costing/page": [
+      "static/media/Geist_Variable-s.p.0mrjj4bg00-he.woff2",
+      "static/media/GeistMono_Variable.p.3ms9vq719j3f8.woff2"
+    ],
+    "[project]/src/app/(app)/employees/[id]/page": [
+      "static/media/Geist_Variable-s.p.0mrjj4bg00-he.woff2",
+      "static/media/GeistMono_Variable.p.3ms9vq719j3f8.woff2"
+    ],
+    "[project]/src/app/(app)/employees/page": [
+      "static/media/Geist_Variable-s.p.0mrjj4bg00-he.woff2",
+      "static/media/GeistMono_Variable.p.3ms9vq719j3f8.woff2"
+    ],
+    "[project]/src/app/(app)/finance/page": [
+      "static/media/Geist_Variable-s.p.0mrjj4bg00-he.woff2",
+      "static/media/GeistMono_Variable.p.3ms9vq719j3f8.woff2"
+    ],
+    "[project]/src/app/(app)/gallery/page": [
+      "static/media/Geist_Variable-s.p.0mrjj4bg00-he.woff2",
+      "static/media/GeistMono_Variable.p.3ms9vq719j3f8.woff2"
+    ],
+    "[project]/src/app/(app)/inventory/page": [
+      "static/media/Geist_Variable-s.p.0mrjj4bg00-he.woff2",
+      "static/media/GeistMono_Variable.p.3ms9vq719j3f8.woff2"
+    ],
+    "[project]/src/app/(app)/measurements/[id]/page": [
+      "static/media/Geist_Variable-s.p.0mrjj4bg00-he.woff2",
+      "static/media/GeistMono_Variable.p.3ms9vq719j3f8.woff2"
+    ],
+    "[project]/src/app/(app)/orders/[id]/measure/page": [
+      "static/media/Geist_Variable-s.p.0mrjj4bg00-he.woff2",
+      "static/media/GeistMono_Variable.p.3ms9vq719j3f8.woff2"
+    ],
+    "[project]/src/app/(app)/orders/[id]/page": [
+      "static/media/Geist_Variable-s.p.0mrjj4bg00-he.woff2",
+      "static/media/GeistMono_Variable.p.3ms9vq719j3f8.woff2"
+    ],
+    "[project]/src/app/(app)/orders/[id]/workshop/page": [
+      "static/media/Geist_Variable-s.p.0mrjj4bg00-he.woff2",
+      "static/media/GeistMono_Variable.p.3ms9vq719j3f8.woff2"
+    ],
+    "[project]/src/app/(app)/orders/new/page": [
+      "static/media/Geist_Variable-s.p.0mrjj4bg00-he.woff2",
+      "static/media/GeistMono_Variable.p.3ms9vq719j3f8.woff2"
+    ],
+    "[project]/src/app/(app)/orders/page": [
+      "static/media/Geist_Variable-s.p.0mrjj4bg00-he.woff2",
+      "static/media/GeistMono_Variable.p.3ms9vq719j3f8.woff2"
+    ],
+    "[project]/src/app/(app)/page": [
+      "static/media/Geist_Variable-s.p.0mrjj4bg00-he.woff2",
+      "static/media/GeistMono_Variable.p.3ms9vq719j3f8.woff2"
+    ],
+    "[project]/src/app/(app)/payroll/page": [
+      "static/media/Geist_Variable-s.p.0mrjj4bg00-he.woff2",
+      "static/media/GeistMono_Variable.p.3ms9vq719j3f8.woff2"
+    ],
+    "[project]/src/app/(app)/production/page": [
+      "static/media/Geist_Variable-s.p.0mrjj4bg00-he.woff2",
+      "static/media/GeistMono_Variable.p.3ms9vq719j3f8.woff2"
+    ],
+    "[project]/src/app/(app)/proposals/[id]/page": [
+      "static/media/Geist_Variable-s.p.0mrjj4bg00-he.woff2",
+      "static/media/GeistMono_Variable.p.3ms9vq719j3f8.woff2"
+    ],
+    "[project]/src/app/(app)/proposals/page": [
+      "static/media/Geist_Variable-s.p.0mrjj4bg00-he.woff2",
+      "static/media/GeistMono_Variable.p.3ms9vq719j3f8.woff2"
+    ],
+    "[project]/src/app/(app)/purchases/[id]/page": [
+      "static/media/Geist_Variable-s.p.0mrjj4bg00-he.woff2",
+      "static/media/GeistMono_Variable.p.3ms9vq719j3f8.woff2"
+    ],
+    "[project]/src/app/(app)/purchases/page": [
+      "static/media/Geist_Variable-s.p.0mrjj4bg00-he.woff2",
+      "static/media/GeistMono_Variable.p.3ms9vq719j3f8.woff2"
+    ],
+    "[project]/src/app/(app)/reports/page": [
+      "static/media/Geist_Variable-s.p.0mrjj4bg00-he.woff2",
+      "static/media/GeistMono_Variable.p.3ms9vq719j3f8.woff2"
+    ],
+    "[project]/src/app/(app)/settings/page": [
+      "static/media/Geist_Variable-s.p.0mrjj4bg00-he.woff2",
+      "static/media/GeistMono_Variable.p.3ms9vq719j3f8.woff2"
+    ],
+    "[project]/src/app/(app)/tasks/page": [
+      "static/media/Geist_Variable-s.p.0mrjj4bg00-he.woff2",
+      "static/media/GeistMono_Variable.p.3ms9vq719j3f8.woff2"
+    ],
+    "[project]/src/app/(app)/workshop/page": [
+      "static/media/Geist_Variable-s.p.0mrjj4bg00-he.woff2",
+      "static/media/GeistMono_Variable.p.3ms9vq719j3f8.woff2"
+    ],
+    "[project]/src/app/(auth)/login/page": [
+      "static/media/Geist_Variable-s.p.0mrjj4bg00-he.woff2",
+      "static/media/GeistMono_Variable.p.3ms9vq719j3f8.woff2"
+    ],
+    "[project]/src/app/_global-error/page": [
+      "static/media/Geist_Variable-s.p.0mrjj4bg00-he.woff2",
+      "static/media/GeistMono_Variable.p.3ms9vq719j3f8.woff2"
+    ],
+    "[project]/src/app/_not-found/page": [
+      "static/media/Geist_Variable-s.p.0mrjj4bg00-he.woff2",
+      "static/media/GeistMono_Variable.p.3ms9vq719j3f8.woff2"
+    ],
+    "[project]/src/app/c/[slug]/denied/page": [
+      "static/media/Geist_Variable-s.p.0mrjj4bg00-he.woff2",
+      "static/media/GeistMono_Variable.p.3ms9vq719j3f8.woff2"
+    ]
+  },
+  "appUsingSizeAdjust": true,
+  "pages": {},
+  "pagesUsingSizeAdjust": false
+}

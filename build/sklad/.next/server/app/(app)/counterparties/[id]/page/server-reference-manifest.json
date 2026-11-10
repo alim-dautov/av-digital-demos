@@ -1,0 +1,105 @@
+{
+  "node": {
+    "00c067eda99e8968e23f9b49e49a9f39f25ca44960": {
+      "workers": {
+        "app/(app)/counterparties/[id]/page": {
+          "moduleId": 16781,
+          "async": true
+        }
+      },
+      "exportedName": "logoutAction",
+      "filename": "src/app/(auth)/actions.ts"
+    },
+    "7f2ab5f1980776f32457b3fbdc7b1e43b99d676d86": {
+      "workers": {
+        "app/(app)/counterparties/[id]/page": {
+          "moduleId": 16781,
+          "async": true
+        }
+      },
+      "exportedName": "createTaskAction",
+      "filename": "src/modules/tasks/actions.ts"
+    },
+    "7f7431b81a202c5a96e24a9d68cd07ab1dc8efb376": {
+      "workers": {
+        "app/(app)/counterparties/[id]/page": {
+          "moduleId": 16781,
+          "async": true
+        }
+      },
+      "exportedName": "saveNoteAction",
+      "filename": "src/modules/notes/actions.ts"
+    },
+    "7f0bf6d98b90e96c574ca03cb26525798a95558703": {
+      "workers": {
+        "app/(app)/counterparties/[id]/page": {
+          "moduleId": 16781,
+          "async": true
+        }
+      },
+      "exportedName": "createLeadAction",
+      "filename": "src/modules/leads/actions.ts"
+    },
+    "7f966c44a8b4edcf223c33ad6febf95670479b1e77": {
+      "workers": {
+        "app/(app)/counterparties/[id]/page": {
+          "moduleId": 16781,
+          "async": true
+        }
+      },
+      "exportedName": "createCpAction",
+      "filename": "src/modules/counterparties/actions.ts"
+    },
+    "7f98b910b45d77b71ecb0bdbc0a86d5f64a3e45134": {
+      "workers": {
+        "app/(app)/counterparties/[id]/page": {
+          "moduleId": 16781,
+          "async": true
+        }
+      },
+      "exportedName": "deleteCpAction",
+      "filename": "src/modules/counterparties/actions.ts"
+    },
+    "7f3d9e3c030b6e1ce331232a253e24faae1dac7e61": {
+      "workers": {
+        "app/(app)/counterparties/[id]/page": {
+          "moduleId": 16781,
+          "async": true
+        }
+      },
+      "exportedName": "updateCpAction",
+      "filename": "src/modules/counterparties/actions.ts"
+    },
+    "7f1e6b9417757d33a288f2498f17e419a412e6e892": {
+      "workers": {
+        "app/(app)/counterparties/[id]/page": {
+          "moduleId": 16781,
+          "async": true
+        }
+      },
+      "exportedName": "reconLinkAction",
+      "filename": "src/modules/counterparties/actions.ts"
+    },
+    "7ffd75dac3928df3da8eac31253e3a8ff545e19e8f": {
+      "workers": {
+        "app/(app)/counterparties/[id]/page": {
+          "moduleId": 16781,
+          "async": true
+        }
+      },
+      "exportedName": "portalLinkAction",
+      "filename": "src/modules/counterparties/actions.ts"
+    },
+    "7f831f87ad059a3cec52ae913fdffee3dd0dccc3e8": {
+      "workers": {
+        "app/(app)/counterparties/[id]/page": {
+          "moduleId": 16781,
+          "async": true
+        }
+      },
+      "exportedName": "portalRevokeAction",
+      "filename": "src/modules/counterparties/actions.ts"
+    }
+  },
+  "edge": {}
+}

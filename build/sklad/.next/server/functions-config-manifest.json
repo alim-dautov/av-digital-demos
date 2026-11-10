@@ -1,0 +1,23 @@
+{
+  "version": 1,
+  "functions": {
+    "/_middleware": {
+      "runtime": "nodejs",
+      "matchers": [
+        {
+          "regexp": "^(?:\\/(_next\\/data\\/[^/]{1,}))?(?:\\/((?!_next\\/static|_next\\/image|brand\\/|.*.(?:png|svg|ico|webmanifest|js|css|woff2?)$).*))(\\.json|\\.rsc|\\.segments\\/.+\\.segment\\.rsc)?[\\/#\\?]?$",
+          "originalSource": "/((?!_next/static|_next/image|brand/|.*.(?:png|svg|ico|webmanifest|js|css|woff2?)$).*)"
+        }
+      ]
+    },
+    "/api/analytics/export": {},
+    "/api/payroll/payslip/[userId]": {},
+    "/api/payroll/sheet": {},
+    "/api/pdf/payslip/[userId]": {},
+    "/api/pdf/pricelist": {},
+    "/api/pdf/quote/[id]": {},
+    "/api/pdf/recon/[id]": {},
+    "/api/pdf/shipment/[id]": {},
+    "/p/doc/[token]": {}
+  }
+}

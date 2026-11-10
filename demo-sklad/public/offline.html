@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#0B2B54">
+<title>Нет соединения — Electro Demo CRM</title>
+<style>
+  :root{--navy:#0B2B54;--y:#FFB510}
+  body{margin:0;min-height:100dvh;display:grid;place-items:center;background:#F5F7FA;color:#0F1B2D;font-family:Manrope,system-ui,sans-serif;padding:24px}
+  .c{max-width:380px;text-align:center}
+  img{width:180px;margin-bottom:28px}
+  h1{font-size:22px;margin:0 0 8px}
+  p{color:#4A5A70;line-height:1.5;margin:0 0 24px}
+  button{height:48px;padding:0 24px;border:0;border-radius:12px;background:var(--y);color:var(--navy);font-weight:700;font-size:15px;cursor:pointer}
+</style>
+</head>
+<body>
+  <div class="c">
+    <img src="/brand/logo-full.svg" alt="Electro Demo">
+    <h1>Нет соединения</h1>
+    <p>Проверьте интернет. Данные не потеряны — как только связь появится, страница обновится.</p>
+    <button onclick="location.reload()">Повторить</button>
+  </div>
+  <script>addEventListener("online",()=>location.reload())</script>
+</body>
+</html>

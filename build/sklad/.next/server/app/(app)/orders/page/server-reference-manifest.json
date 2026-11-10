@@ -1,0 +1,55 @@
+{
+  "node": {
+    "00c067eda99e8968e23f9b49e49a9f39f25ca44960": {
+      "workers": {
+        "app/(app)/orders/page": {
+          "moduleId": 17543,
+          "async": true
+        }
+      },
+      "exportedName": "logoutAction",
+      "filename": "src/app/(auth)/actions.ts"
+    },
+    "7f2ab5f1980776f32457b3fbdc7b1e43b99d676d86": {
+      "workers": {
+        "app/(app)/orders/page": {
+          "moduleId": 17543,
+          "async": true
+        }
+      },
+      "exportedName": "createTaskAction",
+      "filename": "src/modules/tasks/actions.ts"
+    },
+    "7f7431b81a202c5a96e24a9d68cd07ab1dc8efb376": {
+      "workers": {
+        "app/(app)/orders/page": {
+          "moduleId": 17543,
+          "async": true
+        }
+      },
+      "exportedName": "saveNoteAction",
+      "filename": "src/modules/notes/actions.ts"
+    },
+    "7f0bf6d98b90e96c574ca03cb26525798a95558703": {
+      "workers": {
+        "app/(app)/orders/page": {
+          "moduleId": 17543,
+          "async": true
+        }
+      },
+      "exportedName": "createLeadAction",
+      "filename": "src/modules/leads/actions.ts"
+    },
+    "7fab6e323093d86abcd36ee1edc59b27818694b3b9": {
+      "workers": {
+        "app/(app)/orders/page": {
+          "moduleId": 17543,
+          "async": true
+        }
+      },
+      "exportedName": "bulkDeleteDraftsAction",
+      "filename": "src/modules/orders/actions.ts"
+    }
+  },
+  "edge": {}
+}

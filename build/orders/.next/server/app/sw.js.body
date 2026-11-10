@@ -1,0 +1,121 @@
+/* Mebel Demo PWA — offline shell cache. HTML-страницы не кэшируются: в них данные пользователя. */
+const CACHE = "mebeldemo-shell-v9";
+const CACHE_PREFIX = "mebeldemo-shell-";
+const SHELL = ["/manifest.webmanifest","/app-icons/icon-192.png","/app-icons/icon-512.png","/app-icons/badge-96.png"];
+const ICON = "/app-icons/icon-192.png";
+const BADGE = "/app-icons/badge-96.png";
+const HOME = "/";
+const MANIFEST = "/manifest.webmanifest";
+
+const OFFLINE_HTML = `<!doctype html><html lang="ru"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1"><title>Нет сети · Mebel Demo</title>
+<style>body{margin:0;min-height:100dvh;display:grid;place-items:center;font-family:system-ui,sans-serif;background:#111;color:#eee;text-align:center}p{color:#999}</style>
+</head><body><main><h1>Нет подключения</h1><p>Проверьте интернет и обновите страницу.</p></main></body></html>`;
+
+self.addEventListener("install", (event) => {
+  event.waitUntil(
+    caches.open(CACHE).then((cache) => cache.addAll(SHELL)).then(() => self.skipWaiting()),
+  );
+});
+
+self.addEventListener("activate", (event) => {
+  event.waitUntil(
+    caches.keys().then((keys) =>
+      Promise.all(keys.filter((k) => k !== CACHE && k.startsWith(CACHE_PREFIX)).map((k) => caches.delete(k))),
+    ).then(() => self.clients.claim()),
+  );
+});
+
+self.addEventListener("push", (event) => {
+  let data = {};
+  try {
+    data = event.data ? event.data.json() : {};
+  } catch {
+    data = { body: event.data ? event.data.text() : "" };
+  }
+  const title = data.title || "Новое уведомление";
+  event.waitUntil(
+    self.registration.showNotification(title, {
+      body: data.body || "",
+      tag: data.tag || undefined,
+      renotify: false,
+      icon: data.icon || ICON,
+      badge: data.badge || BADGE,
+      data: { url: data.url || HOME },
+    }),
+  );
+});
+
+self.addEventListener("notificationclick", (event) => {
+  event.notification.close();
+  const target = new URL(event.notification.data?.url || HOME, self.location.origin).href;
+  event.waitUntil(
+    self.clients.matchAll({ type: "window", includeUncontrolled: true }).then((list) => {
+      for (const client of list) {
+        if (new URL(client.url).origin === self.location.origin && "focus" in client) {
+          return client.focus().then((c) => (c && "navigate" in c ? c.navigate(target) : c));
+        }
+      }
+      return self.clients.openWindow(target);
+    }),
+  );
+});
+
+self.addEventListener("pushsubscriptionchange", (event) => {
+  const old = event.oldSubscription;
+  const options = old && old.options;
+  if (!options) return;
+  event.waitUntil(
+    self.registration.pushManager.subscribe(options).then((sub) =>
+      fetch("/api/push/subscribe", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        credentials: "include",
+        body: JSON.stringify(sub.toJSON()),
+      }),
+    ),
+  );
+});
+
+self.addEventListener("fetch", (event) => {
+  const { request } = event;
+  if (request.method !== "GET") return;
+
+  const url = new URL(request.url);
+  if (url.origin !== self.location.origin) return;
+  if (url.pathname.startsWith("/api/")) return;
+
+  if (
+    url.pathname.startsWith("/_next/static/") ||
+    url.pathname.startsWith("/app-icons/") ||
+    url.pathname.startsWith("/fonts/") ||
+    url.pathname === MANIFEST
+  ) {
+    event.respondWith(
+      caches.match(request).then(
+        (cached) =>
+          cached ||
+          fetch(request).then((res) => {
+            if (res.ok) {
+              const copy = res.clone();
+              caches.open(CACHE).then((cache) => cache.put(request, copy));
+            }
+            return res;
+          }),
+      ),
+    );
+    return;
+  }
+
+  if (request.mode === "navigate") {
+    event.respondWith(
+      fetch(request).catch(
+        () =>
+          new Response(OFFLINE_HTML, {
+            status: 503,
+            headers: { "Content-Type": "text/html; charset=utf-8" },
+          }),
+      ),
+    );
+  }
+});

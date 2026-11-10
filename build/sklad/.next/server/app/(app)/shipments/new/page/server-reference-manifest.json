@@ -1,0 +1,65 @@
+{
+  "node": {
+    "00c067eda99e8968e23f9b49e49a9f39f25ca44960": {
+      "workers": {
+        "app/(app)/shipments/new/page": {
+          "moduleId": 45621,
+          "async": true
+        }
+      },
+      "exportedName": "logoutAction",
+      "filename": "src/app/(auth)/actions.ts"
+    },
+    "7f2ab5f1980776f32457b3fbdc7b1e43b99d676d86": {
+      "workers": {
+        "app/(app)/shipments/new/page": {
+          "moduleId": 45621,
+          "async": true
+        }
+      },
+      "exportedName": "createTaskAction",
+      "filename": "src/modules/tasks/actions.ts"
+    },
+    "7f7431b81a202c5a96e24a9d68cd07ab1dc8efb376": {
+      "workers": {
+        "app/(app)/shipments/new/page": {
+          "moduleId": 45621,
+          "async": true
+        }
+      },
+      "exportedName": "saveNoteAction",
+      "filename": "src/modules/notes/actions.ts"
+    },
+    "7f0bf6d98b90e96c574ca03cb26525798a95558703": {
+      "workers": {
+        "app/(app)/shipments/new/page": {
+          "moduleId": 45621,
+          "async": true
+        }
+      },
+      "exportedName": "createLeadAction",
+      "filename": "src/modules/leads/actions.ts"
+    },
+    "7f5f420aeb7121567495981f6094421dc82327ff1b": {
+      "workers": {
+        "app/(app)/shipments/new/page": {
+          "moduleId": 45621,
+          "async": true
+        }
+      },
+      "exportedName": "checkDebtAction",
+      "filename": "src/modules/shipments/actions.ts"
+    },
+    "7fc29b7c3506e909bcf9402b872508d4bf3851cbd0": {
+      "workers": {
+        "app/(app)/shipments/new/page": {
+          "moduleId": 45621,
+          "async": true
+        }
+      },
+      "exportedName": "createShipmentAction",
+      "filename": "src/modules/shipments/actions.ts"
+    }
+  },
+  "edge": {}
+}

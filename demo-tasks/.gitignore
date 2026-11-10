@@ -1,0 +1,48 @@
+# Secrets and local config
+/config.php
+/.env
+/.env.local
+/storage/grok.key
+
+# Dependencies
+/vendor/
+/frontend/node_modules/
+/e2e/node_modules/
+/.local-mariadb/
+
+# Build and runtime
+/public_html/assets/
+/public_html/sw.js
+/public_html/workbox-*.js
+/public_html/manifest.webmanifest
+/public_html/registerSW.js
+/storage/logs/*
+!/storage/logs/.gitkeep
+/storage/uploads/*
+!/storage/uploads/.gitkeep
+/storage/attachments/
+/storage/kp/
+/storage/cache/*
+!/storage/cache/.gitkeep
+/storage/cache/demo_totp.json
+/storage/cache/deploy-manifest.json
+/storage/cache/phpunit/
+*.log
+
+# IDE / OS
+.idea/
+.vscode/
+*.swp
+.DS_Store
+Thumbs.db
+
+# Test artifacts
+/coverage/
+/e2e/test-results/
+/e2e/playwright-report/
+/frontend/dist/
+
+# Local DB dumps
+*.sql.gz
+/storage/backups/
+/tmp/

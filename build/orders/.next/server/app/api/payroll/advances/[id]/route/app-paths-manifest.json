@@ -1,0 +1,3 @@
+{
+  "/api/payroll/advances/[id]/route": "app/api/payroll/advances/[id]/route.js"
+}

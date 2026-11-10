@@ -1,0 +1,12 @@
+var R=require("../../../../../../chunks/[turbopack]_runtime.js")("server/app/api/calculator/proposal/[id]/pdf/route.js")
+R.c("server/chunks/[root-of-the-server]__0pffhfh._.js")
+R.c("server/chunks/[root-of-the-server]__02t-spm._.js")
+R.c("server/chunks/[root-of-the-server]__1w30vgx._.js")
+R.c("server/chunks/node_modules_next_1zdbrne._.js")
+R.c("server/chunks/_15h2qoc._.js")
+R.c("server/chunks/[root-of-the-server]__15bjnu5._.js")
+R.c("server/chunks/_1a2p28p._.js")
+R.c("server/chunks/node_modules_next_dist_11w3z5e._.js")
+R.c("server/chunks/_next-internal_server_app_api_calculator_proposal_[id]_pdf_route_actions_1enmr4o.js")
+R.m(64086)
+module.exports=R.m(64086).exports

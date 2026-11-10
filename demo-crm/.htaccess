@@ -1,0 +1,25 @@
+DirectoryIndex index.html
+Options -Indexes
+
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  RewriteBase /
+
+  RewriteCond %{HTTPS} !=on
+  RewriteRule ^ https://www.alim-os.asia%{REQUEST_URI} [L,R=301]
+
+  RewriteCond %{HTTP_HOST} !^www\.alim-os\.asia$ [NC]
+  RewriteRule ^ https://www.alim-os.asia%{REQUEST_URI} [L,R=301]
+
+  RewriteCond %{HTTP:Authorization} .
+  RewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization}]
+
+  RewriteRule ^api/config\.php$ - [F,L]
+  RewriteRule ^data/ - [F,L]
+
+  RewriteCond %{REQUEST_FILENAME} -f [OR]
+  RewriteCond %{REQUEST_FILENAME} -d
+  RewriteRule ^ - [L]
+
+  RewriteRule ^ index.html [L]
+</IfModule>

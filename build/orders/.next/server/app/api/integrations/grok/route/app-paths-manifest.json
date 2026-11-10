@@ -1,0 +1,3 @@
+{
+  "/api/integrations/grok/route": "app/api/integrations/grok/route.js"
+}

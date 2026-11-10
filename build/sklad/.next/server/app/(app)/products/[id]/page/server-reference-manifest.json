@@ -1,0 +1,75 @@
+{
+  "node": {
+    "00c067eda99e8968e23f9b49e49a9f39f25ca44960": {
+      "workers": {
+        "app/(app)/products/[id]/page": {
+          "moduleId": 14063,
+          "async": true
+        }
+      },
+      "exportedName": "logoutAction",
+      "filename": "src/app/(auth)/actions.ts"
+    },
+    "7f2ab5f1980776f32457b3fbdc7b1e43b99d676d86": {
+      "workers": {
+        "app/(app)/products/[id]/page": {
+          "moduleId": 14063,
+          "async": true
+        }
+      },
+      "exportedName": "createTaskAction",
+      "filename": "src/modules/tasks/actions.ts"
+    },
+    "7f7431b81a202c5a96e24a9d68cd07ab1dc8efb376": {
+      "workers": {
+        "app/(app)/products/[id]/page": {
+          "moduleId": 14063,
+          "async": true
+        }
+      },
+      "exportedName": "saveNoteAction",
+      "filename": "src/modules/notes/actions.ts"
+    },
+    "7f0bf6d98b90e96c574ca03cb26525798a95558703": {
+      "workers": {
+        "app/(app)/products/[id]/page": {
+          "moduleId": 14063,
+          "async": true
+        }
+      },
+      "exportedName": "createLeadAction",
+      "filename": "src/modules/leads/actions.ts"
+    },
+    "7f4dbf45ea465cea307d9ccca9bad4818f7b483cb9": {
+      "workers": {
+        "app/(app)/products/[id]/page": {
+          "moduleId": 14063,
+          "async": true
+        }
+      },
+      "exportedName": "createProductAction",
+      "filename": "src/modules/products/actions.ts"
+    },
+    "7f064b81bed09333cde3f312cf56f819a8a55021ee": {
+      "workers": {
+        "app/(app)/products/[id]/page": {
+          "moduleId": 14063,
+          "async": true
+        }
+      },
+      "exportedName": "deleteProductsAction",
+      "filename": "src/modules/products/actions.ts"
+    },
+    "7ff81cfb56233b81d9407ecde6e356da5a24e7efdb": {
+      "workers": {
+        "app/(app)/products/[id]/page": {
+          "moduleId": 14063,
+          "async": true
+        }
+      },
+      "exportedName": "updateProductAction",
+      "filename": "src/modules/products/actions.ts"
+    }
+  },
+  "edge": {}
+}

@@ -1,0 +1,2 @@
+# Customer timesheet template parts must stay byte-identical to the original XLSX (no EOL conversion).
+resources/timesheet/** -text

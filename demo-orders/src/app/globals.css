@@ -1,0 +1,400 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+/* Mebel Demo — premium dark graphite SaaS (dark-first). Light only when .light is set. */
+:root {
+  --background: #070807;
+  --foreground: #ffffff;
+  --card: #0d0f0d;
+  --card-foreground: #ffffff;
+  --popover: #111411;
+  --popover-foreground: #ffffff;
+  --primary: #e98c55;
+  --primary-foreground: #070807;
+  --secondary: #111411;
+  --secondary-foreground: #ffffff;
+  --muted: #111411;
+  --muted-foreground: #9ca39c;
+  --accent: #e98c55;
+  --accent-foreground: #070807;
+  --destructive: #ef4444;
+  --destructive-foreground: #ffffff;
+  --success: #22c55e;
+  --success-foreground: #070807;
+  --warning: #f59e0b;
+  --warning-foreground: #070807;
+  --border: rgba(255, 255, 255, 0.08);
+  --input: rgba(255, 255, 255, 0.1);
+  --ring: #e98c55;
+  --panel: #0d0f0d;
+  --panel-elevated: #111411;
+  --canvas: #070807;
+  --chart-grid: rgba(255, 255, 255, 0.06);
+  --chart-axis: #9ca39c;
+  --chart-positive: #86efac;
+  --radius: 0.75rem;
+  --radius-input: 0.625rem;
+  --safe-top: env(safe-area-inset-top, 0px);
+  --safe-right: env(safe-area-inset-right, 0px);
+  --safe-bottom: env(safe-area-inset-bottom, 0px);
+  --safe-left: env(safe-area-inset-left, 0px);
+  --duration-fast: 150ms;
+  --duration-base: 200ms;
+  --accent-glow: 0 0 20px rgba(233, 140, 85, 0.24);
+}
+
+.light {
+  --background: #f4f5f4;
+  --foreground: #070807;
+  --card: #ffffff;
+  --card-foreground: #070807;
+  --popover: #ffffff;
+  --popover-foreground: #070807;
+  --primary: #c2601f;
+  --primary-foreground: #ffffff;
+  --secondary: #e8ebe8;
+  --secondary-foreground: #070807;
+  --muted: #e8ebe8;
+  --muted-foreground: #5a625a;
+  --accent: #e98c55;
+  --accent-foreground: #070807;
+  --destructive: #dc2626;
+  --destructive-foreground: #ffffff;
+  --success: #16a34a;
+  --success-foreground: #ffffff;
+  --warning: #d97706;
+  --warning-foreground: #ffffff;
+  --border: rgba(7, 8, 7, 0.12);
+  --input: rgba(7, 8, 7, 0.14);
+  --ring: #c2601f;
+  --panel: #ffffff;
+  --panel-elevated: #f4f5f4;
+  --canvas: #f4f5f4;
+  --chart-grid: rgba(7, 8, 7, 0.08);
+  --chart-axis: #5a625a;
+  --chart-positive: #16a34a;
+  --accent-glow: 0 0 16px rgba(194, 96, 31, 0.2);
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-success: var(--success);
+  --color-success-foreground: var(--success-foreground);
+  --color-warning: var(--warning);
+  --color-warning-foreground: var(--warning-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-panel: var(--panel);
+  --color-panel-elevated: var(--panel-elevated);
+  --color-canvas: var(--canvas);
+  --radius-xs: calc(var(--radius) - 8px);
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: var(--radius-input);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+  --ease-out-quart: cubic-bezier(0.25, 1, 0.5, 1);
+  --font-sans: var(--font-geist-sans), ui-sans-serif, system-ui, sans-serif;
+  --font-mono: var(--font-geist-mono), ui-monospace, monospace;
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  html {
+    color-scheme: dark;
+    touch-action: manipulation;
+  }
+
+  button,
+  a,
+  [role="button"],
+  summary,
+  label {
+    touch-action: manipulation;
+  }
+
+  html.light {
+    color-scheme: light;
+  }
+
+  ::selection {
+    background-color: color-mix(in srgb, var(--primary) 28%, transparent);
+    color: var(--foreground);
+  }
+
+  body {
+    @apply bg-background text-foreground antialiased;
+    font-feature-settings: "rlig" 1, "calt" 1;
+    min-height: 100dvh;
+  }
+
+  h1,
+  h2,
+  h3 {
+    text-wrap: balance;
+  }
+
+  p,
+  li {
+    text-wrap: pretty;
+  }
+
+  .lucide {
+    stroke-width: 1.5;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+      scroll-behavior: auto !important;
+    }
+  }
+}
+
+@keyframes route-progress {
+  0% {
+    transform: translateX(-120%);
+  }
+  100% {
+    transform: translateX(420%);
+  }
+}
+
+.route-progress-bar {
+  animation: route-progress 0.9s ease-in-out infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .route-progress-bar {
+    animation: none;
+    width: 100%;
+  }
+}
+
+/* Calculator sections. One active card: focus inside, or an open menu whose trigger stays in the section. */
+.calculator-block {
+  position: relative;
+  border-radius: var(--radius-xl);
+  border: 1px solid var(--border);
+  background-color: var(--panel-elevated);
+  box-shadow:
+    0 1px 1px rgb(0 0 0 / 0.2),
+    0 8px 18px -8px rgb(0 0 0 / 0.45);
+  transform-origin: center top;
+  transition:
+    border-color 220ms cubic-bezier(0.25, 1, 0.5, 1),
+    box-shadow 220ms cubic-bezier(0.25, 1, 0.5, 1),
+    background-color 220ms cubic-bezier(0.25, 1, 0.5, 1),
+    transform 220ms cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+.light .calculator-block {
+  background-color: var(--panel);
+  box-shadow:
+    0 1px 1px rgb(7 8 7 / 0.04),
+    0 8px 18px -8px rgb(7 8 7 / 0.12);
+}
+
+.calculator-block:focus-within,
+.calculator-block:has([data-state="open"]) {
+  z-index: 1;
+  border-color: var(--primary);
+  background-color: color-mix(in srgb, var(--primary) 7%, var(--panel-elevated));
+  box-shadow:
+    0 0 0 1px color-mix(in srgb, var(--primary) 62%, transparent),
+    0 0 0 4px color-mix(in srgb, var(--primary) 16%, transparent),
+    0 12px 24px -8px rgb(0 0 0 / 0.5);
+  transform: scale(1.01);
+}
+
+.light .calculator-block:focus-within,
+.light .calculator-block:has([data-state="open"]) {
+  background-color: color-mix(in srgb, var(--primary) 5%, var(--panel));
+  box-shadow:
+    0 0 0 1px color-mix(in srgb, var(--primary) 50%, transparent),
+    0 0 0 4px color-mix(in srgb, var(--primary) 12%, transparent),
+    0 12px 24px -8px rgb(7 8 7 / 0.14);
+}
+
+.calculator-inset {
+  background-color: color-mix(in srgb, var(--canvas) 78%, var(--panel-elevated));
+}
+
+.light .calculator-inset {
+  background-color: var(--canvas);
+}
+
+.calculator-block :where(div:not(.flex, .items-center, .items-end)) > :where(label) + :is(input, textarea, button, select, .relative) {
+  margin-top: 0.375rem;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .calculator-block:focus-within,
+  .calculator-block:has([data-state="open"]) {
+    transform: none;
+  }
+}
+
+@layer utilities {
+  .pt-safe {
+    padding-top: var(--safe-top);
+  }
+  .pr-safe {
+    padding-right: var(--safe-right);
+  }
+  .pb-safe {
+    padding-bottom: var(--safe-bottom);
+  }
+  .pl-safe {
+    padding-left: var(--safe-left);
+  }
+  .px-safe {
+    padding-left: var(--safe-left);
+    padding-right: var(--safe-right);
+  }
+  .py-safe {
+    padding-top: var(--safe-top);
+    padding-bottom: var(--safe-bottom);
+  }
+  .p-safe {
+    padding-top: var(--safe-top);
+    padding-right: var(--safe-right);
+    padding-bottom: var(--safe-bottom);
+    padding-left: var(--safe-left);
+  }
+  .shadow-lime,
+  .shadow-accent {
+    box-shadow: var(--accent-glow);
+  }
+}
+
+/* Keep the mobile navigation anchored to the layout viewport on Android PWAs.
+   The explicit height avoids relayout when browser chrome changes the visual viewport. */
+.mobile-nav-shell {
+  position: fixed;
+  inset-inline: 0;
+  bottom: 0;
+  height: calc(4.5rem + var(--safe-bottom));
+  padding-bottom: var(--safe-bottom);
+  transform: translate3d(0, 0, 0);
+  contain: layout paint;
+  will-change: transform;
+}
+
+.mobile-content-padding {
+  padding-bottom: calc(5.5rem + var(--safe-bottom));
+}
+
+.mobile-content-padding-quick {
+  padding-bottom: calc(10rem + var(--safe-bottom));
+}
+
+@media (max-width: 767px) and (max-height: 520px) {
+  /* The keyboard owns the short visual viewport; let the focused control remain visible. */
+  .mobile-nav-shell {
+    display: none;
+  }
+  .mobile-content-padding,
+  .mobile-content-padding-quick {
+    padding-bottom: 1.25rem;
+  }
+}
+
+/* Без ручного -webkit-backdrop-filter: сборщик добавит префикс сам, а пара свойств сворачивается в одно префиксное и Chrome его игнорирует. */
+@utility material {
+  background-color: color-mix(in srgb, var(--panel) 80%, transparent);
+  backdrop-filter: blur(24px) saturate(150%);
+
+  @media (prefers-reduced-transparency: reduce) {
+    background-color: var(--panel);
+    backdrop-filter: none;
+  }
+}
+
+@utility scrim {
+  background-color: rgb(0 0 0 / 0.6);
+  backdrop-filter: blur(2px);
+
+  @media (prefers-reduced-transparency: reduce) {
+    background-color: rgb(0 0 0 / 0.75);
+    backdrop-filter: none;
+  }
+}
+
+@utility scroll-x {
+  overflow-x: auto;
+  overscroll-behavior-x: contain;
+  scrollbar-width: none;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+@keyframes voice-bar {
+  0%,
+  100% {
+    transform: scaleY(0.35);
+    opacity: 0.55;
+  }
+  50% {
+    transform: scaleY(1);
+    opacity: 1;
+  }
+}
+
+.animate-voice-bar {
+  animation: voice-bar 0.85s ease-in-out infinite;
+  transform-origin: bottom;
+}
+
+@media print {
+  @page {
+    size: A4;
+    margin: 12mm;
+  }
+
+  body * {
+    visibility: hidden;
+  }
+
+  .print-area,
+  .print-area * {
+    visibility: visible;
+  }
+
+  .print-area {
+    position: absolute;
+    inset: 0 0 auto 0;
+    box-shadow: none !important;
+    border: none !important;
+  }
+
+  .no-print {
+    display: none !important;
+  }
+}

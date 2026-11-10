@@ -1,0 +1,13 @@
+var R=require("../../../../../chunks/[turbopack]_runtime.js")("server/app/api/orders/[id]/cancel/route.js")
+R.c("server/chunks/[externals]_heic-convert_04k5x4l._.js")
+R.c("server/chunks/[root-of-the-server]__1rvn9ez._.js")
+R.c("server/chunks/node_modules_next_1zdbrne._.js")
+R.c("server/chunks/[root-of-the-server]__0hhv457._.js")
+R.c("server/chunks/_0e1w5fn._.js")
+R.c("server/chunks/[root-of-the-server]__15bjnu5._.js")
+R.c("server/chunks/_1a2p28p._.js")
+R.c("server/chunks/node_modules_next_dist_11w3z5e._.js")
+R.c("server/chunks/_15h2qoc._.js")
+R.c("server/chunks/_next-internal_server_app_api_orders_[id]_cancel_route_actions_0f5i_ze.js")
+R.m(12000)
+module.exports=R.m(12000).exports

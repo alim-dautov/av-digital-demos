@@ -1,0 +1,11 @@
+var R=require("../../../../chunks/[turbopack]_runtime.js")("server/app/api/settings/company/route.js")
+R.c("server/chunks/[externals]_heic-convert_05_wwn6._.js")
+R.c("server/chunks/node_modules_next_dist_11w3z5e._.js")
+R.c("server/chunks/[root-of-the-server]__1g0u6ng._.js")
+R.c("server/chunks/[root-of-the-server]__15bjnu5._.js")
+R.c("server/chunks/_1a2p28p._.js")
+R.c("server/chunks/_15h2qoc._.js")
+R.c("server/chunks/node_modules_next_1zdbrne._.js")
+R.c("server/chunks/_next-internal_server_app_api_settings_company_route_actions_1iwug-g.js")
+R.m(18537)
+module.exports=R.m(18537).exports
